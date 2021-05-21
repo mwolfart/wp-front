@@ -3,7 +3,7 @@ import React from "react";
 import useFetch from "../../hooks/useFetch/useFetch";
 
 export default function Courses() {
-    const courses = useFetch('http://localhost/wp-json/wp/v2/courses');
+    const courses = useFetch('https://sitemaroto.000webhostapp.com/wp-json/wp/v2/posts');
   return (
     <List component="nav" aria-label="main mailbox folders">
         {courses && courses.map((course, index) => (
